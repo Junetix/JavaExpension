@@ -60,7 +60,7 @@ public class MultiChatServer {
 			System.out.println("##ChatThread Start..");
 			try{
 				inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-				outMsg = new PrintWriter(socket.getOutputStream());
+				outMsg = new PrintWriter(socket.getOutputStream(),true);
 				//루프 돌면서 수신된 메시지 처리하기
 				while(status){
 					msg = inMsg.readLine();

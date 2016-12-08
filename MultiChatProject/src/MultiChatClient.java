@@ -219,7 +219,7 @@ public class MultiChatClient implements ActionListener, Runnable {
 	}
 
 	public static void main(String[] args) {
-		MultiChatClient mcc = new MultiChatClient("127.0.0.1");
+		MultiChatClient mcc = new MultiChatClient("192.168.0.206");
 	}
 
 	
